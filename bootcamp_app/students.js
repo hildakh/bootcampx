@@ -22,7 +22,6 @@ LIMIT $2;
   .then(res => {
     res.rows.forEach(user => {
       console.log(`${user.name} had an id of ${user.student_id} and was in the ${user.cohort} cohort`);
-      // return res.rows[0];
     });
   
   })
